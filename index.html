@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jimi Hendrix</title>
+    <style>
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  overflow: hidden scroll;
+  color: #000;
+  font-family: sans-serif;
+  text-decoration-skip-ink: none;
+  -webkit-text-decoration-skip: objects;
+  background: #fff;
+  cursor: default;
+}
+body {
+  margin: 1rem;
+}
+a {
+  color: #00f;
+}
+a:hover {
+  color: #f00;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: .5rem;
+}
+h1,
+header div {
+  margin: 1.5rem 0;
+  white-space: nowrap;
+}
+
+span {
+  display: block;
+}
+span a {
+  color: inherit;
+  text-decoration: none;
+}
+span a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  margin: 3rem 0;
+}
+footer {
+  margin: 3rem 0;
+  text-align: right;
+  white-space: nowrap;
+}
+
+    </style>
+    <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('img').forEach(img => {
+    const number = img.getAttribute('src').replace('.jpg', '');
+    const alt    = img.getAttribute('alt');
+    // Set Title
+    const a = img.parentElement;
+    img.title = a.title = alt;
+    // Display Title
+    const p = a.parentElement;
+    p.insertAdjacentHTML('afterbegin', `<span><a href="#jimi-${number}">${number} : ${alt}</a></span>`);
+  });
+});
+
+window.addEventListener('load', () => {
+  // Scroll To Hash
+  setTimeout(() => {
+    const hash = location.hash;
+    if(hash) document.querySelector(hash).scrollIntoView();
+  }, 1);
+});
+
+    </script>
+  </head>
+  <body>
+
+<header id="header">
+  <h1>Jimi Hendrix</h1>
+  <div><a href="#footer">▼</a></div>
+</header>
+
+<p id="jimi-001"><a href="001.jpg" target="_blank"><img src="001.jpg" width="428" height="640" alt="1967-06-18 Monterey ジミヘンといえばこの写真"></a></p>
+<p id="jimi-002"><a href="002.jpg" target="_blank"><img src="002.jpg" width="556" height="432" alt="1969-08-18 Woodstock 1969年製オリンピックホワイトのストラト"></a></p>
+<p id="jimi-003"><a href="003.jpg" target="_blank"><img src="003.jpg" width="450" height="640" alt="1969-08-18 Woodstock 通称ホワイト・ワン"></a></p>
+<p id="jimi-004"><a href="004.jpg" target="_blank"><img src="004.jpg" width="640" height="432" alt="1969-08-18 Woodstock 会場にいた成毛滋はジミの演奏を見ずに帰ってしまった"></a></p>
+<p id="jimi-005"><a href="005.jpg" target="_blank"><img src="005.jpg" width="546" height="640" alt="1969-08-18 Woodstock 足元には Vox のワウと Fuzz Face、オクタヴィアがある"></a></p>
+<p id="jimi-006"><a href="006.jpg" target="_blank"><img src="006.jpg" width="640" height="480" alt="1969-08-18 Woodstock 予定を大幅に押しまくって午前9時頃演奏開始"></a></p>
+<p id="jimi-007"><a href="007.jpg" target="_blank"><img src="007.jpg" width="459" height="640" alt="1970-08-30 Isle Of Wight 死の18日前に出演したワイト島ロック・フェスティバル"></a></p>
+<p id="jimi-008"><a href="008.jpg" target="_blank"><img src="008.jpg" width="640" height="469" alt="1970-08-30 Isle Of Wight このときのバンド名は Blue Wild Angel"></a></p>
+<p id="jimi-009"><a href="009.jpg" target="_blank"><img src="009.jpg" width="640" height="435" alt="1970-08-30 Isle Of Wight ウッドストック・ストラトに並んで有名な1969年製の黒のストラト"></a></p>
+<p id="jimi-010"><a href="010.jpg" target="_blank"><img src="010.jpg" width="490" height="349" alt="1970-08-30 Isle Of Wight 通称ブラック・ビューティ"></a></p>
+<p id="jimi-011"><a href="011.jpg" target="_blank"><img src="011.jpg" width="349" height="490" alt="1970-08-30 Isle Of Wight 歯ギター"></a></p>
+<p id="jimi-012"><a href="012.jpg" target="_blank"><img src="012.jpg" width="458" height="640" alt="1970-08-30 Isle Of Wight この V はローディだったエリック・バレットが貰っている"></a></p>
+<p id="jimi-013"><a href="013.jpg" target="_blank"><img src="013.jpg" width="500" height="640" alt="1970-08-30 Isle Of Wight レフティのフライング V"></a></p>
+<p id="jimi-014"><a href="014.jpg" target="_blank"><img src="014.jpg" width="640" height="480" alt="本人は使いづらかったらしくローディに譲った・現在は各地のハードロックカフェで展示中"></a></p>
+<p id="jimi-015"><a href="015.jpg" target="_blank"><img src="015.jpg" width="200" height="500" alt="左利き用のフライング V「フライング・エンジェル」マニーズという楽器屋がオーダーメイドしたカスタム"></a></p>
+<p id="jimi-016"><a href="016.jpg" target="_blank"><img src="016.jpg" width="292" height="640" alt="SG カスタム・ラージ PG・1969-09-06 Dick Cavett Show で使用・現在は各地のハードロックカフェで展示中"></a></p>
+<p id="jimi-017"><a href="017.jpg" target="_blank"><img src="017.jpg" width="480" height="640" alt="1967年製フライング V"></a></p>
+<p id="jimi-018"><a href="018.jpg" target="_blank"><img src="018.jpg" width="640" height="480" alt="本人がペイント・主にヨーロッパツアーで使用された"></a></p>
+<p id="jimi-019"><a href="019.jpg" target="_blank"><img src="019.jpg" width="339" height="581" alt="1969年製ストラトキャスター・ブラック"></a></p>
+<p id="jimi-020"><a href="020.jpg" target="_blank"><img src="020.jpg" width="326" height="448" alt="通称「ブラックビューティ」"></a></p>
+<p id="jimi-021"><a href="021.jpg" target="_blank"><img src="021.jpg" width="246" height="640" alt="1969年製ストラトキャスター・オリンピックホワイト"></a></p>
+<p id="jimi-022"><a href="022.jpg" target="_blank"><img src="022.jpg" width="325" height="448" alt="通称「ウッドストック・ストラト」「ホワイト・ワン」"></a></p>
+<p id="jimi-023"><a href="023.jpg" target="_blank"><img src="023.jpg" width="400" height="411" alt="1960-07 小さい頃のジミ・持ってるギターは Danelectro"></a></p>
+<p id="jimi-024"><a href="024.jpg" target="_blank"><img src="024.jpg" width="500" height="627" alt="1965年 Little Richard のバックバンド時代・ギターはジャズマスター"></a></p>
+<p id="jimi-025"><a href="025.jpg" target="_blank"><img src="025.jpg" width="350" height="353" alt="1967-08-24 BBC Top Of The Pops ギターはジャガー・リップシンクだったため弦は右用のまま"></a></p>
+<p id="jimi-026"><a href="026.jpg" target="_blank"><img src="026.jpg" width="198" height="164" alt="1967年ヴァイオリンをふざけて弾くジミ"></a></p>
+<p id="jimi-027"><a href="027.jpg" target="_blank"><img src="027.jpg" width="363" height="406" alt="1967-01-29 1966年夏購入ジミ初のストラト・白ローズウッド"></a></p>
+<p id="jimi-028"><a href="028.jpg" target="_blank"><img src="028.jpg" width="267" height="269" alt="ギターをアンプに刺すところ"></a></p>
+<p id="jimi-029"><a href="029.jpg" target="_blank"><img src="029.jpg" width="460" height="383" alt="1967-03-02 London Marquee Beat Club サンバースト"></a></p>
+<p id="jimi-030"><a href="030.jpg" target="_blank"><img src="030.jpg" width="358" height="352" alt="いつの写真だろう"></a></p>
+<p id="jimi-031"><a href="031.jpg" target="_blank"><img src="031.jpg" width="485" height="640" alt="エクスペリエンスの3人で。アンプラグド"></a></p>
+<p id="jimi-032"><a href="032.jpg" target="_blank"><img src="032.jpg" width="528" height="550" alt="1968-08-21 Virginia 主にデビュー後のロンドンツアーで使われた"></a></p>
+<p id="jimi-033"><a href="033.jpg" target="_blank"><img src="033.jpg" width="288" height="640" alt="1967-02-22 London ロゴから見て1963～64年製"></a></p>
+<p id="jimi-034"><a href="034.jpg" target="_blank"><img src="034.jpg" width="394" height="640" alt="1968-03-09 New York サンバースト・ローズウッド"></a></p>
+<p id="jimi-035"><a href="035.jpg" target="_blank"><img src="035.jpg" width="640" height="487" alt="1967-06-18 Monterey 元々赤だったものを白に塗りペイント・このあとブチ壊される"></a></p>
+<p id="jimi-036"><a href="036.jpg" target="_blank"><img src="036.jpg" width="400" height="451" alt="1967-06-18 Monterey 黒のローズウッド"></a></p>
+<p id="jimi-037"><a href="037.jpg" target="_blank"><img src="037.jpg" width="457" height="640" alt="裏側にはこんなメッセージがあった"></a></p>
+<p id="jimi-038"><a href="038.jpg" target="_blank"><img src="038.jpg" width="480" height="640" alt="左上がモンタレーストラト・中央のものは他のもの"></a></p>
+<p id="jimi-039"><a href="039.jpg" target="_blank"><img src="039.jpg" width="480" height="640" alt="モンタレー・ストラトのレプリカ"></a></p>
+<p id="jimi-040"><a href="040.jpg" target="_blank"><img src="040.jpg" width="404" height="640" alt="1968-02-21 Philadelphia バックステージで黒ローズウッドを持つジミ"></a></p>
+<p id="jimi-041"><a href="041.jpg" target="_blank"><img src="041.jpg" width="425" height="640" alt="1968-03-28 Ohio"></a></p>
+<p id="jimi-042"><a href="042.jpg" target="_blank"><img src="042.jpg" width="476" height="480" alt="1967-08-18 Los Angeles リハ"></a></p>
+<p id="jimi-043"><a href="043.jpg" target="_blank"><img src="043.jpg" width="605" height="640" alt="1968-03-02 New York"></a></p>
+<p id="jimi-044"><a href="044.jpg" target="_blank"><img src="044.jpg" width="638" height="584" alt="1968-03-23 Italy Milan ジミのバンドの特徴はドラムより後ろにアンプがあること"></a></p>
+<p id="jimi-045"><a href="045.jpg" target="_blank"><img src="045.jpg" width="350" height="580" alt="1967-08-18 Los Angeles ステージ"></a></p>
+<p id="jimi-046"><a href="046.jpg" target="_blank"><img src="046.jpg" width="442" height="640" alt="1968-03-23 Italy Milan モノクロ"></a></p>
+<p id="jimi-047"><a href="047.jpg" target="_blank"><img src="047.jpg" width="640" height="441" alt="1968-03-21 Rochester Community"></a></p>
+<p id="jimi-048"><a href="048.jpg" target="_blank"><img src="048.jpg" width="348" height="505" alt="ズボンの柄のセンスヤバい"></a></p>
+<p id="jimi-049"><a href="049.jpg" target="_blank"><img src="049.jpg" width="307" height="300" alt="アメリカデビュー後のメインギターだったストラト"></a></p>
+<p id="jimi-050"><a href="050.jpg" target="_blank"><img src="050.jpg" width="481" height="640" alt="トランジションロゴなので1966年製と思われる"></a></p>
+<p id="jimi-051"><a href="051.jpg" target="_blank"><img src="051.jpg" width="530" height="398" alt="1968 Paris ジミとノエルの間の人は Eric Burdon"></a></p>
+<p id="jimi-052"><a href="052.jpg" target="_blank"><img src="052.jpg" width="483" height="640" alt="1968-10-11 San Francisco 白ローズウッド・ラージヘッド"></a></p>
+<p id="jimi-053"><a href="053.jpg" target="_blank"><img src="053.jpg" width="450" height="443" alt="1969-06-20 Newport 直前にネックが折れ苦肉の策でテレキャスのネックを付けている・ボディの詳細は不明"></a></p>
+<p id="jimi-054"><a href="054.jpg" target="_blank"><img src="054.jpg" width="480" height="640" alt="1969-06-20 Newport 股の下でも弾いちゃう"></a></p>
+<p id="jimi-055"><a href="055.jpg" target="_blank"><img src="055.jpg" width="358" height="574" alt="1969-06-20 Newport エクスペリエンス解散直前ライブ・客は騒ぎまくりジミは不完全燃焼"></a></p>
+<p id="jimi-056"><a href="056.jpg" target="_blank"><img src="056.jpg" width="400" height="640" alt="詳細不明ストラト・ラージヘッド・ローズウッド・黒？サンバーストにも見えるような"></a></p>
+<p id="jimi-057"><a href="057.jpg" target="_blank"><img src="057.jpg" width="500" height="640" alt="1967-03-18 Germany 詳細不明ストラト・メイプル・赤？ツマミが交換されている"></a></p>
+<p id="jimi-058"><a href="058.jpg" target="_blank"><img src="058.jpg" width="640" height="436" alt="詳細不明ストラト・TV Star 1967 のジャケ写・赤ローズウッドラージヘッド"></a></p>
+<p id="jimi-059"><a href="059.jpg" target="_blank"><img src="059.jpg" width="640" height="483" alt="1968 TTG Studios 詳細不明ストラト・カスタムカラーのブルーメタリック？ローズ・ラージヘッド"></a></p>
+<p id="jimi-060"><a href="060.jpg" target="_blank"><img src="060.jpg" width="344" height="480" alt="1967-08-18 Benedict Canyon 詳細不明ストラト・白・ローズウッド・べっ甲ピックガード"></a></p>
+<p id="jimi-061"><a href="061.jpg" target="_blank"><img src="061.jpg" width="396" height="400" alt="1967 ジミとミッチェルの間で V を持っているのは Jeremy Thorpe"></a></p>
+<p id="jimi-062"><a href="062.jpg" target="_blank"><img src="062.jpg" width="630" height="412" alt="1968-02-18 Texas"></a></p>
+<p id="jimi-063"><a href="063.jpg" target="_blank"><img src="063.jpg" width="317" height="358" alt="1968-03-09 New York"></a></p>
+<p id="jimi-064"><a href="064.jpg" target="_blank"><img src="064.jpg" width="426" height="640" alt="1968-03 New York"></a></p>
+<p id="jimi-065"><a href="065.jpg" target="_blank"><img src="065.jpg" width="251" height="333" alt="1967-10-10 ペイントはジミ自身がマニキュアでペイントした"></a></p>
+<p id="jimi-066"><a href="066.jpg" target="_blank"><img src="066.jpg" width="577" height="550" alt="1967-10-10 このフライング V を初めて使ったのは 1967-08-15 ミシガンでのライブといわれている"></a></p>
+<p id="jimi-067"><a href="067.jpg" target="_blank"><img src="067.jpg" width="298" height="475" alt="1967-10-10 オランダのテレビ撮りでの一コマ・この年の7月頃に購入し自分でペイントしたフライング V"></a></p>
+<p id="jimi-068"><a href="068.jpg" target="_blank"><img src="068.jpg" width="303" height="140" alt="1969年型フライング V・スタジオのみの使用だった様子"></a></p>
+<p id="jimi-069"><a href="069.jpg" target="_blank"><img src="069.jpg" width="447" height="640" alt="Las Vegas のハードロックカフェに展示されていたもの"></a></p>
+<p id="jimi-070"><a href="070.jpg" target="_blank"><img src="070.jpg" width="640" height="640" alt="隣は Lonnie Youngblood"></a></p>
+<p id="jimi-071"><a href="071.jpg" target="_blank"><img src="071.jpg" width="405" height="640" alt="1967-10-13 England"></a></p>
+<p id="jimi-072"><a href="072.jpg" target="_blank"><img src="072.jpg" width="260" height="372" alt="1969-01-08 Lorensberg 白の SG カスタム・ラージピックガード"></a></p>
+<p id="jimi-073"><a href="073.jpg" target="_blank"><img src="073.jpg" width="400" height="300" alt="SG カスタムはバディ・ガイが使っていたのを意識したのかも"></a></p>
+<p id="jimi-074"><a href="074.jpg" target="_blank"><img src="074.jpg" width="204" height="276" alt="1969-09-06 Dick Cavett Show"></a></p>
+<p id="jimi-075"><a href="075.jpg" target="_blank"><img src="075.jpg" width="640" height="431" alt="1969-01-12 Germany"></a></p>
+<p id="jimi-076"><a href="076.jpg" target="_blank"><img src="076.jpg" width="500" height="579" alt="1969-09-10 New York"></a></p>
+<p id="jimi-077"><a href="077.jpg" target="_blank"><img src="077.jpg" width="640" height="464" alt="1969-02-18 Royal Albert Hall"></a></p>
+<p id="jimi-078"><a href="078.jpg" target="_blank"><img src="078.jpg" width="640" height="480" alt="Atlantic City のハードロックカフェに展示してある"></a></p>
+<p id="jimi-079"><a href="079.jpg" target="_blank"><img src="079.jpg" width="252" height="302" alt="1970-07-30 Maui"></a></p>
+<p id="jimi-080"><a href="080.jpg" target="_blank"><img src="080.jpg" width="627" height="462" alt="1970-07-30 Maui"></a></p>
+<p id="jimi-081"><a href="081.jpg" target="_blank"><img src="081.jpg" width="375" height="500" alt="London のハードロックカフェに展示されているフライング V"></a></p>
+<p id="jimi-082"><a href="082.jpg" target="_blank"><img src="082.jpg" width="480" height="640" alt="Chicago のハードロックカフェに展示されているレスポールカスタム"></a></p>
+<p id="jimi-083"><a href="083.jpg" target="_blank"><img src="083.jpg" width="132" height="175" alt="1968-05-31 Zurich"></a></p>
+<p id="jimi-084"><a href="084.jpg" target="_blank"><img src="084.jpg" width="303" height="303" alt="ストラップこの位置で固定できるのか…"></a></p>
+<p id="jimi-085"><a href="085.jpg" target="_blank"><img src="085.jpg" width="428" height="640" alt="初期のシングルコイルが付いているタイプ"></a></p>
+<p id="jimi-086"><a href="086.jpg" target="_blank"><img src="086.jpg" width="440" height="600" alt="1968-05-10 Fillmore East と思われる"></a></p>
+<p id="jimi-087"><a href="087.jpg" target="_blank"><img src="087.jpg" width="485" height="640" alt="ブラックのレスポールカスタムを使っている"></a></p>
+<p id="jimi-088"><a href="088.jpg" target="_blank"><img src="088.jpg" width="116" height="180" alt="レスポールスペシャル・ソープバータイプなので1950年代半ばのものと思われる"></a></p>
+<p id="jimi-089"><a href="089.jpg" target="_blank"><img src="089.jpg" width="467" height="604" alt="1968-03-31 Zurich カラー写真で TV イエロー"></a></p>
+<p id="jimi-090"><a href="090.jpg" target="_blank"><img src="090.jpg" width="300" height="368" alt="1968-03-31 Zurich レスポールスペシャル TV イエローを使うジミ"></a></p>
+<p id="jimi-091"><a href="091.jpg" target="_blank"><img src="091.jpg" width="480" height="640" alt="San Diego のハードロックカフェに置いてあるジャズマスター"></a></p>
+<p id="jimi-092"><a href="092.jpg" target="_blank"><img src="092.jpg" width="640" height="509" alt="1968-03-28 Xavier University 多分ジャズマスター"></a></p>
+<p id="jimi-093"><a href="093.jpg" target="_blank"><img src="093.jpg" width="499" height="640" alt="1968-03-28 Xavier University ゴヤ製のレンジマスターモデル・アームがついていないサイケペイント版"></a></p>
+<p id="jimi-094"><a href="094.jpg" target="_blank"><img src="094.jpg" width="234" height="109" alt="1968-03 イタリア製のレンジマスター"></a></p>
+<p id="jimi-095"><a href="095.jpg" target="_blank"><img src="095.jpg" width="414" height="542" alt="1968-05-20 Florida ギルド製のスター・ファイア・デラックスのレフティ仕様"></a></p>
+<p id="jimi-096"><a href="096.jpg" target="_blank"><img src="096.jpg" width="640" height="640" alt="1966 Brooklyn Museum 白のジャズマスターか・Wilson Pickett のバックバンド時代"></a></p>
+<p id="jimi-097"><a href="097.jpg" target="_blank"><img src="097.jpg" width="320" height="317" alt="1965 Essex County Club ギターはジャズマスター・Isley Brothers のバックバンド時代"></a></p>
+<p id="jimi-098"><a href="098.jpg" target="_blank"><img src="098.jpg" width="480" height="628" alt="1967-08-24 BBC Top Of The Pops ジャガー・リップシンクだったため弦は右用のまま"></a></p>
+<p id="jimi-099"><a href="099.jpg" target="_blank"><img src="099.jpg" width="300" height="255" alt="1968-10 TTG Studios アンプで知られる Acoustic の Black Widow"></a></p>
+<p id="jimi-100"><a href="100.jpg" target="_blank"><img src="100.jpg" width="206" height="220" alt="Supro の Ozark というギター。1959年に父に買ってもらった最初のギター"></a></p>
+<p id="jimi-101"><a href="101.jpg" target="_blank"><img src="101.jpg" width="306" height="246" alt="1960-02-20 Seattle ロッキン・キングスのコンサート"></a></p>
+<p id="jimi-102"><a href="102.jpg" target="_blank"><img src="102.jpg" width="200" height="151" alt="左端・Blue Flames・白のデュオソニックはジミが初めて手に入れたフェンダーギター"></a></p>
+<p id="jimi-103"><a href="103.jpg" target="_blank"><img src="103.jpg" width="500" height="254" alt="1964 Isley Brothers 右端に白のデュオソニックを握るジミ"></a></p>
+<p id="jimi-104"><a href="104.jpg" target="_blank"><img src="104.jpg" width="400" height="243" alt="左端・Curtis Knight・サンバーストのデュオソニック"></a></p>
+<p id="jimi-105"><a href="105.jpg" target="_blank"><img src="105.jpg" width="140" height="135" alt="1963-03-19 Nashville ギターのみのアップだけど1962年型の Epiphone Wilshire というギター"></a></p>
+<p id="jimi-106"><a href="106.jpg" target="_blank"><img src="106.jpg" width="450" height="338" alt="1965 Buddy & Stacey の後ろで Guyatone LG-70 を弾くジミ"></a></p>
+<p id="jimi-107"><a href="107.jpg" target="_blank"><img src="107.jpg" width="428" height="600" alt="軍隊時代・ダンエレクトロはオザークが盗まれたあとおばさんに買ってもらった"></a></p>
+<p id="jimi-108"><a href="108.jpg" target="_blank"><img src="108.jpg" width="598" height="368" alt="1967-05 London 左下でノエルが弾いてるのがジミのアコギ Epiphone FT-79"></a></p>
+<p id="jimi-109"><a href="109.jpg" target="_blank"><img src="109.jpg" width="640" height="549" alt="1964 中央にいるのは後にまた共演する Billy Cox・持ってるギターは Epiphone Wilshire"></a></p>
+<p id="jimi-110"><a href="110.jpg" target="_blank"><img src="110.jpg" width="364" height="341" alt="左端・King Casuals・Epiphone Wilshire"></a></p>
+<p id="jimi-111"><a href="111.jpg" target="_blank"><img src="111.jpg" width="282" height="394" alt="1968-05-20 Miami 詳細不明・JG Guitar か"></a></p>
+<p id="jimi-112"><a href="112.jpg" target="_blank"><img src="112.jpg" width="500" height="364" alt="1965 白のジャズマスター・King Curtis のバックバンド"></a></p>
+<p id="jimi-113"><a href="113.jpg" target="_blank"><img src="113.jpg" width="543" height="480" alt="ジャズマスター・Isley Brothers のバックバンド"></a></p>
+<p id="jimi-114"><a href="114.jpg" target="_blank"><img src="114.jpg" width="640" height="521" alt="1968-05-04 これはノエルのベースを借りてる模様"></a></p>
+<p id="jimi-115"><a href="115.jpg" target="_blank"><img src="115.jpg" width="394" height="400" alt="1967-10-08 London ジミとノエルは同じハグストロームの8弦ベースを使っていた"></a></p>
+<p id="jimi-116"><a href="116.jpg" target="_blank"><img src="116.jpg" width="600" height="416" alt="1967-08-08 PPX Studios"></a></p>
+<p id="jimi-117"><a href="117.jpg" target="_blank"><img src="117.jpg" width="311" height="394" alt="1967-08-08 PPX Studios 隣は Curtis Knight"></a></p>
+<p id="jimi-118"><a href="118.jpg" target="_blank"><img src="118.jpg" width="375" height="339" alt="1967-08-08 PPX Studios Curtis Knight とのセッションで8弦ベースを使用中"></a></p>
+<p id="jimi-119"><a href="119.jpg" target="_blank"><img src="119.jpg" width="640" height="480" alt="Boston のハードロックカフェに置いてある"></a></p>
+<p id="jimi-120"><a href="120.jpg" target="_blank"><img src="120.jpg" width="488" height="640" alt="1970-01 New York レフティの SG カスタムを使っている・Elvin Bishop とのセッション"></a></p>
+<p id="jimi-121"><a href="121.jpg" target="_blank"><img src="121.jpg" width="460" height="276" alt="プロモ映画撮影のため監督のピーター・ニールが借りてきたゼマティスの12弦アコースティック"></a></p>
+<p id="jimi-122"><a href="122.jpg" target="_blank"><img src="122.jpg" width="318" height="480" alt="ドラムを叩くジミ"></a></p>
+<p id="jimi-123"><a href="123.jpg" target="_blank"><img src="123.jpg" width="411" height="640" alt="1967-11-14 London"></a></p>
+<p id="jimi-124"><a href="124.jpg" target="_blank"><img src="124.jpg" width="549" height="421" alt="1967-12-05 Scotland 写真を撮るジミ"></a></p>
+<p id="jimi-125"><a href="125.jpg" target="_blank"><img src="125.jpg" width="411" height="640" alt="1968-02-05 Arizona"></a></p>
+<p id="jimi-126"><a href="126.jpg" target="_blank"><img src="126.jpg" width="427" height="477" alt="1969 New York 弓道をたしなむジミ"></a></p>
+<p id="jimi-127"><a href="127.jpg" target="_blank"><img src="127.jpg" width="488" height="640" alt="1969 New York"></a></p>
+<p id="jimi-128"><a href="128.jpg" target="_blank"><img src="128.jpg" width="600" height="436" alt="1968-05 New York ピアノを弾くジミ"></a></p>
+<p id="jimi-129"><a href="129.jpg" target="_blank"><img src="129.jpg" width="500" height="513" alt="コンポーザーやエンジニアとしての才能もあるジミ"></a></p>
+<p id="jimi-130"><a href="130.jpg" target="_blank"><img src="130.jpg" width="639" height="432" alt="Experience ノエルのベースは8弦"></a></p>
+<p id="jimi-131"><a href="131.jpg" target="_blank"><img src="131.jpg" width="640" height="480" alt="1967-11 London 3人でヘアスタイルのセット"></a></p>
+<p id="jimi-132"><a href="132.jpg" target="_blank"><img src="132.jpg" width="640" height="433" alt="1967-05-16 Germany"></a></p>
+<p id="jimi-133"><a href="133.jpg" target="_blank"><img src="133.jpg" width="447" height="500" alt="ギタリストだったのにいきなりベースをやらされ結局クビにされてしまうノエルが不憫でならない"></a></p>
+<p id="jimi-134"><a href="134.jpg" target="_blank"><img src="134.jpg" width="640" height="640" alt="ノエルは後にファット・マットレスというバンドを組み2003年死去・ミッチは2008年に客死"></a></p>
+<p id="jimi-135"><a href="135.jpg" target="_blank"><img src="135.jpg" width="640" height="480" alt="ジミのムスタング"></a></p>
+<p id="jimi-136"><a href="136.jpg" target="_blank"><img src="136.jpg" width="454" height="424" alt="1970-05 California ビールを飲むジミ"></a></p>
+<p id="jimi-137"><a href="137.jpg" target="_blank"><img src="137.jpg" width="640" height="415" alt="1969-09-11 クルマに寄りかかり喫煙するジミ"></a></p>
+<p id="jimi-138"><a href="138.jpg" target="_blank"><img src="138.jpg" width="640" height="480" alt="ツマミをいじるジミ"></a></p>
+<p id="jimi-139"><a href="139.jpg" target="_blank"><img src="139.jpg" width="640" height="634" alt="ファンに囲まれ上機嫌なジミ"></a></p>
+<p id="jimi-140"><a href="140.jpg" target="_blank"><img src="140.jpg" width="500" height="306" alt="ザ・フーと"></a></p>
+<p id="jimi-141"><a href="141.jpg" target="_blank"><img src="141.jpg" width="600" height="395" alt="1969 New York ミック・ジャガーと"></a></p>
+<p id="jimi-142"><a href="142.jpg" target="_blank"><img src="142.jpg" width="640" height="590" alt="1967 Monterey オーティス・レディングと"></a></p>
+<p id="jimi-143"><a href="143.jpg" target="_blank"><img src="143.jpg" width="471" height="640" alt="1967 London 果物と"></a></p>
+<p id="jimi-144"><a href="144.jpg" target="_blank"><img src="144.jpg" width="640" height="472" alt="1967-05-27 Germany 行儀の悪いジミ"></a></p>
+<p id="jimi-145"><a href="145.jpg" target="_blank"><img src="145.jpg" width="418" height="640" alt="1969-12-31 Fillmore East つい最近の写真のように綺麗な1枚"></a></p>
+<p id="jimi-146"><a href="146.jpg" target="_blank"><img src="146.jpg" width="574" height="408" alt="1970-09-01 Sweden"></a></p>
+<p id="jimi-147"><a href="147.jpg" target="_blank"><img src="147.jpg" width="480" height="640" alt="1970-09-01 Sweden"></a></p>
+<p id="jimi-148"><a href="148.jpg" target="_blank"><img src="148.jpg" width="500" height="337" alt="1970-09-02 Denmark Aarhus"></a></p>
+<p id="jimi-149"><a href="149.jpg" target="_blank"><img src="149.jpg" width="636" height="640" alt="1970-09-03 Denmark Copenhagen"></a></p>
+<p id="jimi-150"><a href="150.jpg" target="_blank"><img src="150.jpg" width="640" height="443" alt="1970-09-04 Berlin"></a></p>
+<p id="jimi-151"><a href="151.jpg" target="_blank"><img src="151.jpg" width="520" height="520" alt="1970-09-05 Germany Hamburg"></a></p>
+<p id="jimi-152"><a href="152.jpg" target="_blank"><img src="152.jpg" width="640" height="442" alt="1970-09-05 Germany Hamburg"></a></p>
+<p id="jimi-153"><a href="153.jpg" target="_blank"><img src="153.jpg" width="442" height="640" alt="1970-09-05 Germany Hamburg"></a></p>
+<p id="jimi-154"><a href="154.jpg" target="_blank"><img src="154.jpg" width="640" height="435" alt="1970-09-06 Fehmarn ジミヘン最後のライブ"></a></p>
+<p id="jimi-155"><a href="155.jpg" target="_blank"><img src="155.jpg" width="640" height="426" alt="1970-09-06 Fehmarn"></a></p>
+<p id="jimi-156"><a href="156.jpg" target="_blank"><img src="156.jpg" width="640" height="426" alt="1970-09-06 Fehmarn"></a></p>
+<p id="jimi-157"><a href="157.jpg" target="_blank"><img src="157.jpg" width="640" height="486" alt="1970-09-06 Fehmarn"></a></p>
+<p id="jimi-158"><a href="158.jpg" target="_blank"><img src="158.jpg" width="471" height="640" alt="1970-09-06 Fehmarn"></a></p>
+<p id="jimi-159"><a href="159.jpg" target="_blank"><img src="159.jpg" width="640" height="435" alt="1970-09-06 Fehmarn"></a></p>
+<p id="jimi-160"><a href="160.jpg" target="_blank"><img src="160.jpg" width="388" height="640" alt="1970-09-06 Fehmarn"></a></p>
+<p id="jimi-161"><a href="161.jpg" target="_blank"><img src="161.jpg" width="640" height="442" alt="1970-09-06 Fehmarn"></a></p>
+<p id="jimi-162"><a href="162.jpg" target="_blank"><img src="162.jpg" width="460" height="640" alt="1970-09-17 ジミヘン生前最期の写真"></a></p>
+<p id="jimi-163"><a href="163.jpg" target="_blank"><img src="163.jpg" width="472" height="640" alt="1970-09-17 ニューヨークにある恋人のモニカ・ダンネマンの家で撮られた写真"></a></p>
+<p id="jimi-164"><a href="164.jpg" target="_blank"><img src="164.jpg" width="432" height="640" alt="1970-09-17 翌18日ジミは嘔吐物を喉に詰まらせ死亡する"></a></p>
+<p id="jimi-165"><a href="165.jpg" target="_blank"><img src="165.jpg" width="432" height="640" alt="1970-09-17 ジミの死の際に一緒にいたモニカ・ダンネマンの行動に不審な点が多く証言も二転三転している"></a></p>
+<p id="jimi-166"><a href="166.jpg" target="_blank"><img src="166.jpg" width="422" height="640" alt="1970-09-17 18日午前11時27分ホテルに駆け付けた救急隊によると暗い部屋のベッドに倒れていたという"></a></p>
+<p id="jimi-167"><a href="167.jpg" target="_blank"><img src="167.jpg" width="640" height="478" alt="1970-09-17 ジミは嘔吐物にまみれ異常に大量の赤ワインが検出されている"></a></p>
+<p id="jimi-168"><a href="168.jpg" target="_blank"><img src="168.jpg" width="640" height="471" alt="1970-09-17 午後0時45分ジミの死亡が正式に発表されると BBC は午後2時のニュースで彼の死を伝えた"></a></p>
+<p id="jimi-169"><a href="169.jpg" target="_blank"><img src="169.jpg" width="426" height="640" alt="1970-09-17 ジミは生前マフィアに誘拐されたこともあったようで何者かに殺されたという説もある"></a></p>
+<p id="jimi-170"><a href="170.jpg" target="_blank"><img src="170.jpg" width="440" height="640" alt="1970-09-17 マネージャーのマイケル・ジェフリーが殺したという説もあるが彼は1973年に死亡している"></a></p>
+<p id="jimi-171"><a href="171.jpg" target="_blank"><img src="171.jpg" width="436" height="640" alt="1970-09-17 彼の死に関与していると疑われたモニカ・ダンネマンは1996年に自殺している"></a></p>
+<p id="jimi-172"><a href="172.jpg" target="_blank"><img src="172.jpg" width="414" height="498" alt="1970-09-17 10月1日シアトルの教会で葬儀が行われグリーンウッドメモリアルパークに墓がある"></a></p>
+<p id="jimi-173"><a href="173.jpg" target="_blank"><img src="173.jpg" width="640" height="434" alt="1970-09-17 「愛国心を持つなら地球に持て。魂を国家に管理させるな」"></a></p>
+<p id="jimi-174"><a href="174.jpg" target="_blank"><img src="174.jpg" width="640" height="430" alt="1970-09-17 「自分が歌っていることについての生きた手本となるためには自分自身を変えなければならない」"></a></p>
+<p id="jimi-175"><a href="175.jpg" target="_blank"><img src="175.jpg" width="500" height="458" alt="1970-09-17 R.I.P. Jimi Hendrix Nov 27 1942 - Sep 18 1970"></a></p>
+
+<hr>
+<footer id="footer"><a href="https://github.com/Neos21/jimi-hendrix">GitHub</a> | <a href="https://neos21.net/">Neo's World</a> | <a href="#header">▲</a></footer>
+
+  </body>
+</html>
